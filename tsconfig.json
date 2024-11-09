@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "rootDir": "./", // এটি মূল ফোল্ডার হিসেবে সেট করুন যাতে সব ফাইল অন্তর্ভুক্ত হয়
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": [
+    "src/**/*",
+    "src/@types",
+    "prisma/**/*" // এটি যোগ করুন যাতে `prisma` ফোল্ডারটিও অন্তর্ভুক্ত হয়
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
